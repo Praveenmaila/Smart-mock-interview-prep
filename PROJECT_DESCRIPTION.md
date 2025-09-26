@@ -33,4 +33,4 @@ Job seekers preparing for technical interviews, including recent graduates, care
 
 ---
 
-*Built with modern web technologies and user-centered design principles to create an accessible, professional interview preparation platform.*
+_Built with modern web technologies and user-centered design principles to create an accessible, professional interview preparation platform._
