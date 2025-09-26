@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Smart Mock Interview Prep</title>
+    <link rel="stylesheet" href="auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Left Side - Branding -->
+        <div class="auth-branding register-branding">
+            <div class="branding-content">
+                <div class="brand-logo">
+                    <a href="index.html">
+                        <i class="fas fa-brain"></i>
+                        <span>Smart Mock Interview Prep</span>
+                    </a>
+                </div>
+                <h2>Start Your Success Journey!</h2>
+                <p>Join thousands of successful candidates who landed their dream jobs with our comprehensive interview preparation platform.</p>
+                <div class="stats-preview">
+                    <div class="stat-preview">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Questions</div>
+                    </div>
+                    <div class="stat-preview">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+                    <div class="stat-preview">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Smart Mock Interview Prep helped me land my dream job at Google. The company-specific questions were spot on!"</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah Chen</strong>
+                            <span>Software Engineer at Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Registration Form -->
+        <div class="auth-form-container">
+            <div class="auth-form">
+                <div class="form-header">
+                    <h1>Create Account</h1>
+                    <p>Get started with your free account today</p>
+                </div>
+
+                <form id="registerForm" class="register-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <span class="error-message" id="firstNameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                            <span class="error-message" id="lastNameError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-container">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                        </div>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+                            <button type="button" class="toggle-password" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-bar">
+                                <div class="strength-fill"></div>
+                            </div>
+                            <span class="strength-text">Password strength</span>
+                        </div>
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                            <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="error-message" id="confirmPasswordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="targetCompany">Target Company (Optional)</label>
+                        <div class="input-container">
+                            <i class="fas fa-building"></i>
+                            <select id="targetCompany" name="targetCompany">
+                                <option value="">Select a company</option>
+                                <option value="google">Google</option>
+                                <option value="microsoft">Microsoft</option>
+                                <option value="amazon">Amazon</option>
+                                <option value="apple">Apple</option>
+                                <option value="meta">Meta (Facebook)</option>
+                                <option value="netflix">Netflix</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                        <label for="agreeTerms">
+                            I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a>
+                        </label>
+                        <span class="error-message" id="agreeTermsError"></span>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="emailUpdates" name="emailUpdates">
+                        <label for="emailUpdates">
+                            Send me updates about new features and interview tips
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth-btn">
+                        <span class="btn-text">Create Account</span>
+                        <div class="btn-loader"></div>
+                    </button>
+
+                    <div class="divider">
+                        <span>or sign up with</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button type="button" class="social-btn google-btn">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-btn github-btn">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </button>
+                        <button type="button" class="social-btn linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </button>
+                    </div>
+
+                    <div class="form-footer">
+                        <p>Already have an account? <a href="login.html">Sign in here</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success/Error Toast -->
+    <div id="toast" class="toast">
+        <i class="toast-icon"></i>
+        <span class="toast-message"></span>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
